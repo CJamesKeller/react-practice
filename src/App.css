@@ -1,3 +1,22 @@
 .mainDiv {
   padding: 20px;
 }
+
+.Header {
+  background-color: grey;
+  padding: 20px;
+}
+
+.Content {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+button {
+  padding: 5px;
+  margin: 10px;
+}
+
+.Message {
+  border: 1px solid black;
+}
