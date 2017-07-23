@@ -2,7 +2,15 @@ import React from "react";
 
 class StatefulInput extends React.Component {
     state = {
-        written: "",
+        writing: "",
+        written: ""
+    };
+
+    handleChange = (event) => {
+        let shoop = event.target.value;
+        this.setState(() => ({
+            writing: shoop
+        }));
     };
 
     write = (written) => {
@@ -10,16 +18,20 @@ class StatefulInput extends React.Component {
             written: written
         }));
     };
-    
+
     render() {
         return (
             <div>
-                <input type="text" value={input} />
-                <button onClick={() => this.write(input.value)}>Write!</button>
-            </div>
-            <div>
-              <h2>Message:</h2>
-              <p>{this.state.written}</p>
+                <div>
+                    <input type="text" onChange={this.handleChange} />
+                    <button onClick={() => this.write(this.state.writing)}>
+                        Write!
+                    </button>
+                </div>
+                <div>
+                  <h2>Message:</h2>
+                  <p>{this.state.written}</p>
+                </div>
             </div>
         );
     };

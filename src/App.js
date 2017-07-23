@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 
 import Header from "./components/Header";
-import SFWritingForm from "./SFWritingForm";
-import SFResult from "./SFResult";
+import SFWritingForm from "./components/SFWritingForm";
+import SFResult from "./components/SFResult";
 import StatefulInput from "./components/StatefulInput";
 
 class App extends React.Component {
@@ -27,7 +27,7 @@ class App extends React.Component {
                     <div className="Content">
                         <div>
                             <SFWritingForm write={this.write}/>
-                            <hr />
+                            <br />
                             <SFResult written={this.state.written}/>
                         </div>
                         <hr />
