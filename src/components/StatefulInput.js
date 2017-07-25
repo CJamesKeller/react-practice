@@ -25,7 +25,7 @@ class StatefulInput extends React.Component {
                 <div>
                     <input type="text" onChange={this.handleChange} />
                     <button onClick={() => this.write(this.state.writing)}>
-                        Write!
+                        Write statefully!
                     </button>
                 </div>
                 <div>

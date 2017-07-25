@@ -5,7 +5,7 @@ const SFWritingForm = ({ write }) => {
     return (
         <div>
             <input type="text" ref={node => input = node} />
-            <button onClick={() => write(input.value)}>Write!</button>
+            <button onClick={() => write(input.value)}>Write statelessly using refs!</button>
         </div>
     );
 }

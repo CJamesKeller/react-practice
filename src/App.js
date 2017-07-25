@@ -33,6 +33,9 @@ class App extends React.Component {
                         <hr />
                         <StatefulInput />
                     </div>
+                    <p>Next up: Draggable and Google Material Design components!</p>
+                    <p>https://github.com/react-materialize/react-materialize</p>
+                    <p>https://github.com/mzabriskie/react-draggable</p>
                 </div>
             </div>
         );
