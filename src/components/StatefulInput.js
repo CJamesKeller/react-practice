@@ -1,4 +1,6 @@
 import React from "react";
+import { Col, Row } from "react-materialize";
+
 
 class StatefulInput extends React.Component {
     state = {
@@ -22,15 +24,20 @@ class StatefulInput extends React.Component {
     render() {
         return (
             <div>
+                <Row>
+                    <Col s={6}>
+                        <input type="text" placeholder="Placeholder"
+                            onChange={this.handleChange} />
+                    </Col>
+                    <Col s={6}>
+                        <button onClick={() => this.write(this.state.writing)}>
+                            Write statefully!
+                        </button>
+                    </Col>
+                </Row>
                 <div>
-                    <input type="text" onChange={this.handleChange} />
-                    <button onClick={() => this.write(this.state.writing)}>
-                        Write statefully!
-                    </button>
-                </div>
-                <div>
-                  <h2>Message:</h2>
-                  <p>{this.state.written}</p>
+                  <h6>Message:</h6>
+                  <p className="messageOutput">{this.state.written}</p>
                 </div>
             </div>
         );

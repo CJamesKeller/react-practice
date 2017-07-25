@@ -16,3 +16,12 @@ button {
   padding: 5px;
   margin: 10px;
 }
+
+.messageOutput {
+    min-height: 60px;
+}
+
+.separator {
+    background-color: skyblue;
+    min-height: 10px;
+}

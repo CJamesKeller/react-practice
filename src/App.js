@@ -1,5 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import PropTypes from "prop-types";
+import { Button, Card, Icon } from "react-materialize";
+import "./App.css";
 
 import Header from "./components/Header";
 import SFWritingForm from "./components/SFWritingForm";
@@ -25,17 +27,27 @@ class App extends React.Component {
                         <Header />
                     </div>
                     <div className="Content">
-                        <div>
+                        <Card title="Stateless Functional Input">
                             <SFWritingForm write={this.write}/>
                             <br />
                             <SFResult written={this.state.written}/>
+                        </Card>
+                        <div className="separator">
                         </div>
-                        <hr />
-                        <StatefulInput />
+                        <Card title="Stateful Input">
+                            <StatefulInput />
+                        </Card>
                     </div>
-                    <p>Next up: Draggable and Google Material Design components!</p>
-                    <p>https://github.com/react-materialize/react-materialize</p>
-                    <p>https://github.com/mzabriskie/react-draggable</p>
+                    <hr />
+                    <div>
+                        <Button waves="light">Mtrl-Btn</Button>
+                        <Icon large>pool</Icon>
+                    </div>
+                    <hr />
+                    <div>
+                        <p>Next up: Draggable components!</p>
+                        <p>https://github.com/mzabriskie/react-draggable</p>
+                    </div>
                 </div>
             </div>
         );
