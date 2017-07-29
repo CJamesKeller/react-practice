@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-materialize";
+import { Button, Col, Row } from "react-materialize";
 
 const SFWritingForm = ({ write }) => {
     let input;
@@ -11,9 +11,9 @@ const SFWritingForm = ({ write }) => {
                         ref={node => input = node} />
                 </Col>
                 <Col s={6}>
-                    <button onClick={() => write(input.value)}>
+                    <Button waves="light" onClick={() => write(input.value)}>
                         Write statelessly using refs!
-                    </button>
+                    </Button>
                 </Col>
             </Row>
         </div>

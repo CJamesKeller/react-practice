@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-materialize";
+import { Button, Col, Row } from "react-materialize";
 
 
 class StatefulInput extends React.Component {
@@ -30,9 +30,9 @@ class StatefulInput extends React.Component {
                             onChange={this.handleChange} />
                     </Col>
                     <Col s={6}>
-                        <button onClick={() => this.write(this.state.writing)}>
+                        <Button waves="light" onClick={() => this.write(this.state.writing)}>
                             Write statefully!
-                        </button>
+                        </Button>
                     </Col>
                 </Row>
                 <div>

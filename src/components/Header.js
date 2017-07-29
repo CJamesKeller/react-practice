@@ -1,10 +1,9 @@
 import React from "react";
+import { Card } from "react-materialize";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Write your message!</h1>
-    </div>
+    <Card title="Write your message!" />
   );
 }
 

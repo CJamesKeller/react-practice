@@ -40,7 +40,6 @@ class App extends React.Component {
                     </div>
                     <hr />
                     <div>
-                        <Button waves="light">Mtrl-Btn</Button>
                         <Icon large>pool</Icon>
                     </div>
                     <hr />

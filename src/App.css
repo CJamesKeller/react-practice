@@ -2,7 +2,7 @@
   padding: 20px;
 }
 
-.Header {
+.Header > .card {
   background-color: grey;
   padding: 20px;
 }
@@ -10,11 +10,6 @@
 .Content {
   padding-top: 20px;
   padding-left: 20px;
-}
-
-button {
-  padding: 5px;
-  margin: 10px;
 }
 
 .messageOutput {
