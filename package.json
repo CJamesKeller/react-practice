@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-draggable": "^2.2.6",
     "react-materialize": "^1.0.6"
   },
   "devDependencies": {
